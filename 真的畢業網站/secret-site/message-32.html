@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>給301的畢業禮物</title>
+    <link rel="stylesheet" href="../css/top-bar.css">
+    <link rel="stylesheet" href="../css/bubble.css">
+    <link rel="stylesheet" href="../css/letter-textbox.css">
+    <link rel="stylesheet" href="../css/bottom-bar.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <style>
+        html{
+            scroll-behavior:smooth;
+            scroll-padding-top:12.5rem;
+            font-family:'Poppins', sans-serif;
+        }
+        body{
+            background-color:#000c20;
+            height:-webkit-fill-available;
+            margin:0;
+        }
+        .overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(255, 255, 255, 0);
+            backdrop-filter: blur(10px);
+            z-index: -10;
+        }
+    </style>
+</head>
+<body>
+    <div class="overlay"></div>
+    <div class="bubble-container">
+        <div class="bubble" id="bubble">
+        </div>
+    </div>
+    <div class="top-bar">
+        <div class="nav2"><a href="../index.html">致301的所有人</a></div>
+        <input type="checkbox" id="open-sidebar">
+        <label for="open-sidebar" id="sidebar-detect"></label>
+        <div class="nav">
+            <a href="../index.html#ThreeYears">三年的回憶</a>
+            <a href="../index.html#Hello">哈囉</a>
+            <a href="../index.html#LetterForYouGuys">給你們的一封信</a>
+            <a href="../index.html#MusicForYouGuys">給你們的一首歌</a>
+        </div>
+        <label for="open-sidebar">
+            <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100" viewBox="0 0 50 50" class="menu">
+            <path d="M 5 8 A 2.0002 2.0002 0 1 0 5 12 L 45 12 A 2.0002 2.0002 0 1 0 45 8 L 5 8 z M 5 23 A 2.0002 2.0002 0 1 0 5 27 L 45 27 A 2.0002 2.0002 0 1 0 45 23 L 5 23 z M 5 38 A 2.0002 2.0002 0 1 0 5 42 L 45 42 A 2.0002 2.0002 0 1 0 45 38 L 5 38 z">
+            </path>
+            </svg>
+        </label>
+    </div>
+    <div class="text-container">
+        <h1>給32號—楊庭睿的信</h1>
+        <h2>道歉</h2>
+        <p>對不起，我這封信沒有用手寫，因為我想手寫時，已經是畢業前一個禮拜，我根本寫不完。希望那張手寫小卡有彌補到少了那份溫暖的手寫信。</p>
+        <p></p>
+        <h2>正文</h2>
+        <p>
+            想當初，我們高一一點也不認識，少數幾次說話就是社團，雖然說我們好像提不起興趣，但我大概可以看得出來你對程式是有些興趣。高二高三之後，我們大多都是選同一門課之後學程式，尤其是自主學習和高三下大多元。
+        </p>
+        <p>
+            你的個性蠻適合資工。內向、不喜與人交談(怕社死)、不排斥邏輯動腦、願意花時間debug......內向和不願社交不是，但剩下都是資工很重要的特質。當然，我也知道你打球很強(學長教嗎?)，相信是你國中和其他人混太熟了，不想打好球都難。很厲害，我得說。
+        </p>
+        <p>
+            現在，雖然說都是北上，但是我要去台師，你要去海洋，沒很遠啦，大概1小時的車程啦(靠北怎麼那麼遠)。然後祝福你上大學之後好好加油，課業順利，過著想過的大學生活。另外，希望你在遇到困難的時候，可以好好正視自己的難關，順利克服他。
+        </p>
+        <p>
+            之後謝謝你這三年的陪伴，沒有你就少一個人和我學Code，學Coding的路上就會無聊些。多元選修上課的時候也就會少了一點樂趣。
+        </p>
+        <p>
+            最後，畢業快樂，珍重再見。
+        </p>
+        <div class="right"><p>—by 30121 何旻哲</p></div>
+    </div>
+    <footer>
+        <div class="copyright-text">&copy; Copyright 2025 PorkChop_YT</div>
+    </footer>
+    <script src="../javascript/Bubble.js"></script>
+</body>
+</html>

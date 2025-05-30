@@ -1,0 +1,131 @@
+.top-bar{
+    position: absolute;
+    height:6rem;
+    width:100%;
+    background:linear-gradient(#061938,#001b47);
+    border:#363636 solid 2px;
+    border-width:0px 0px 2px 0px;
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    align-items:center;
+    left:0;
+    right:0;
+    top:0;
+    z-index: 1;
+}
+.menu{
+    position:absolute;
+    opacity: 0;
+    right:1000px;   
+    fill: white;
+    top:-4px;
+    scale:0.5;
+}
+#open-sidebar{
+    position:absolute;
+    top:2.5rem;
+    right:1000px;
+    width:13px;
+    margin:0;
+    opacity: 0  ;
+}
+#sidebar-detect{
+    position: absolute;
+    height:50px;
+    width:50px;
+    right:1000px;
+    display: none;
+}
+.nav{
+    display:flex;
+    flex-direction: row;
+    justify-content:right;
+    margin-right:1.5em;
+    gap:clamp(1rem,2.5vw,2rem);
+    width:100rem;
+    right:-100%;
+    font-size:min(3vw,20px);
+}
+.nav a{
+    font-weight:500;
+    text-decoration: none;
+    margin:0;
+    padding:0;
+    color:#ffffff;
+    transition: color 0.3s;
+    transition:0.3s;
+    box-sizing: border-box;
+}
+.nav2{
+    width:100%;
+}
+.nav2 a{
+    font-weight:700;
+    padding-left:min(32px,7%);
+    font-size:min(5vw,2rem);
+    text-decoration: none;
+    color:white;
+}
+.nav a:hover,.nav a:focus-visible{
+    color:#ffef08;
+    transform:scale(1.2);
+    transition:0.3s;
+}
+
+@media(max-width:870px) {
+    .top-bar{
+        height:clamp(4rem,15vh,6rem);
+    }
+    .nav{
+        position:fixed;
+        margin-top:-6px;
+        margin-right:0;
+        top:clamp(4rem,15vh,6rem);
+        background: radial-gradient(#061938, #0a306d);;
+        width:100%;
+        height:19rem;
+        right:-105%;
+        display:flex;
+        flex-direction: column;
+        justify-content:space-evenly;
+        align-items: center;
+        flex-wrap: wrap;
+        transition: 0.3s ease-in;
+        z-index: 2;
+        box-shadow:inset 4px 0 20px #001b47;
+    }
+    .nav a{
+        font-size:max(3vw,1rem);
+        font-weight:500;
+        text-align: center;
+        text-decoration: none;
+        margin-right:0;
+        color:#ffffff;
+    }
+    .nav2 a{
+        font-size:clamp(1.5rem,6vw,2rem);
+    }
+    .menu{
+        opacity:100;
+    }
+    #sidebar-detect{
+        display:block;
+        cursor: pointer;
+        right:25px;
+        width:min(2rem,3rem);
+        height:min(2rem,3rem);
+    }
+    #open-sidebar{
+        right:2.75rem;
+    }
+    .menu{
+        width:5rem;
+        right:0;
+    }
+    #open-sidebar:checked ~ .nav{
+        display: flex;
+        position: absolute;
+        right:0;
+    }
+}

@@ -1,0 +1,67 @@
+.sliding-container{
+    display:flex;
+    align-items: center;
+    margin-left:auto;
+    margin-right:auto;
+    width:clamp(18rem,50%,55rem);
+    overflow-x:hidden;
+    z-index: -1;
+    border:10px solid #ffffff;
+    box-sizing: border-box;
+    border-radius: 20px;
+}
+.wrapper{
+    width:100%;
+    display:flex;
+    animation:slide 70s infinite;
+}
+@keyframes slide{
+    0%{transform:translateX(0);}
+    4.5%{transform:translateX(0);}
+    5%{transform:translateX(-100%);}
+    9.5%{transform:translateX(-100%);}
+    10%{transform:translateX(-200%);}
+    14.5%{transform:translateX(-200%);}
+    15%{transform:translateX(-300%);}
+    19.5%{transform:translateX(-300%);}
+    20%{transform:translateX(-400%);}
+    24.5%{transform:translateX(-400%);}
+    25%{transform:translateX(-500%);}
+    29.5%{transform:translateX(-500%);}
+    30%{transform:translateX(-600%);}
+    34.5%{transform:translateX(-600%);}
+    35%{transform:translateX(-700%);}
+    39.5%{transform:translateX(-700%);}
+    40%{transform:translateX(-800%);}
+    44.5%{transform:translateX(-800%);}
+    45%{transform:translateX(-900%);}
+    49.5%{transform:translateX(-900%);}
+    50%{transform:translateX(-1000%);}
+    54.5%{transform:translateX(-1000%);}
+    55%{transform:translateX(-1100%);}
+    59.5%{transform:translateX(-1100%);}
+    60%{transform:translateX(-1200%);}
+    64.5%{transform:translateX(-1200%);}
+    65%{transform:translateX(-1300%);}
+    69.5%{transform:translateX(-1300%);}
+    70%{transform:translateX(-1400%);}
+    74.5%{transform:translateX(-1400%);}
+    75%{transform:translateX(-1500%);}
+    79.5%{transform:translateX(-1500%);}
+    80%{transform:translateX(-1600%);}
+    84.5%{transform:translateX(-1600%);}
+    85%{transform:translateX(-1700%);}
+    89.5%{transform:translateX(-1700%);}
+    90%{transform:translateX(-1800%);}
+    94.5%{transform:translateX(-1800%);}
+    95%{transform:translateX(-1900%);}
+    99.5%{transform:translateX(-1900%);}
+    100%{transform:translateX(-2000%);}
+}
+
+img{
+    object-fit: cover;
+    max-width:100%;
+    height:auto;
+    z-index: -2;
+}

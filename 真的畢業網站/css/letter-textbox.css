@@ -1,0 +1,31 @@
+.text-container{
+    width:auto;
+    height:auto;
+    margin:10rem min(8vw,10rem) 0 min(8vw,10rem);
+    padding:max(10px,1%) max(20px,2%) max(10px,1%) max(20px,2%);
+    background:linear-gradient(rgb(0, 98, 183),rgb(0, 67, 183));
+    border: white 10px solid;
+    border-radius: 10px;
+    z-index: 5;
+}
+.text-container p{
+    font-size:max(1vw,18px);
+}
+.text-container h1{
+    font-size:30px;
+}
+.text-container .quote{
+    border:rgb(154, 154, 154) 4px solid;
+    border-width: 0 0 0 5px;
+    padding-left:.75rem;
+    color:rgb(208, 208, 208);
+    font-size:20px;
+    border-radius: 5px;
+}
+.text-container h1,h2,p{
+    color:white;
+}
+.text-container .right{
+    display: flex;
+    justify-content: right;
+}

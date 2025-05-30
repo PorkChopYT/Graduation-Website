@@ -1,0 +1,33 @@
+.bubble-container{
+    position:fixed;
+    width:100%;
+    height:100vh;
+    left:0;
+    top:0;
+    overflow:hidden;
+    z-index: -11;
+}
+.bubble{
+    width:100%;
+    position:absolute;
+    display:flex;
+}
+.bubble span{
+    position:relative;
+    width:30px;
+    height:30px;
+    background:#d31249;
+    margin:0 4px;
+    border-radius: 50%;
+    box-shadow: 0 0 0 10px #ff710b8b, 0 0 50px #d3124c51, 0 0 100px #d312a951;
+    animation: bubble-animate 15s linear infinite;
+    animation-duration: calc(400s/var(--i));
+}
+.bubble span:nth-child(even){
+    background:#3be7f7;
+    box-shadow: 0 0 0 10px #12acd38b, 0 0 50px #0174d897, 0 0 100px #0f5deeb1;
+}
+@keyframes bubble-animate {
+    0%{transform:translateY(100vh) translateX(100vh) scale(0.25);}
+    100%{transform:translateY(-100vh) translateX(100vh) scale(1);}
+}

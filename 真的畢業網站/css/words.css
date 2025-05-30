@@ -1,0 +1,37 @@
+.first-part{
+    color:white;
+    font-size:clamp(1rem,4vw,1.75rem);
+    margin-top:1rem;
+    text-align:center;
+}
+.second-part{
+    color:white;
+    margin-left:2rem;
+    margin-right:2rem;
+    font-size:min(4vw,18px);
+}
+.last-part{
+    color:white;
+    text-align:center;
+    font-size:min(18px,4vw);
+    margin:10px 10px 10px 10px;
+}
+.normal-heading{
+    color:white;
+    text-align:center;
+    font-size:clamp(2rem,6vw,3rem);
+    margin-top:5rem;
+}
+.textbox-heading{
+    color:white;
+    margin-left:2rem;
+    margin-right:2rem;
+}
+.Music{
+    display:inline;
+    color:aqua;
+}
+.Music-Align-Center{
+    display: flex;
+    justify-content: center;
+}
